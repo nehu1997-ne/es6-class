@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box1"></div>
+    <button type="btn">submit</button>
+    <script src="script.js"></script>
+</body>
+<script>
+class Calculation{
+    constructor(){
+         this.firstValue=;
+         this.SecondValue=;
+        
+    } 
+    getTotalValue(){
+        return this.firstValue-this.SecondValue;
+    }
+displaydetails(){
+    let temp=`<input type="text" placeholder="enter first value">${this.firstValue}<br>`
+    temp+=`<input type="text" placeholder="enter first value">${this.SecondValue}<br/>`
+    temp+=`<input type="text" placeholder="enter first value">${this.getTotalValue()}<br/>`
+        return temp
+        
+}
+}
+let vv= new  Calculation()
+document.querySelector("#box1").innerHTML=vv.displaydetails()
+
+
+</script>
+</html>
